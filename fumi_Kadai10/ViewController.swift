@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     let prefectures = ["北海道", "青森県", "岩手県", "宮城県", "秋田県",
                        "山形県", "福島県", "茨城県", "栃木県", "群馬県",
                        "埼玉県", "千葉県", "東京都", "神奈川県","新潟県",
@@ -19,6 +18,9 @@ class ViewController: UIViewController {
                        "徳島県", "香川県", "愛媛県", "高知県", "福岡県",
                        "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県",
                        "鹿児島県", "沖縄県"]
+    let backGroundColors = [UIColor(red: 255, green: 209, blue: 208, alpha: 1.0),
+                            UIColor(red: 222, green: 246, blue: 154, alpha: 1.0),
+                            UIColor(red: 203, green: 216, blue: 255, alpha: 1.0)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +34,10 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        cell.nameLabel.text = prefectures[indexPath.row]
+        cell.commentLabel.text = "\(indexPath.row + 1)番目の都道府県です"
+        cell.backgroundColor = backGroundColors[indexPath.row % 3]
         return cell
     }
 }
