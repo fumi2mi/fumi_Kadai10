@@ -5,3 +5,6 @@ opt_in_rules:
   - unneeded_parentheses_in_closure_argument
   - vertical_whitespace_closing_braces
   - vertical_whitespace_opening_braces
+excluded:
+  - fumi_Kadai10/AppDelegate.swift
+  - fumi_Kadai10/SceneDelegate.swift
