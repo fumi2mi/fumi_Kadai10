@@ -18,9 +18,9 @@ class ViewController: UIViewController {
                        "徳島県", "香川県", "愛媛県", "高知県", "福岡県",
                        "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県",
                        "鹿児島県", "沖縄県"]
-    let backGroundColors = [UIColor(red: 255, green: 209, blue: 208, alpha: 1.0),
-                            UIColor(red: 222, green: 246, blue: 154, alpha: 1.0),
-                            UIColor(red: 203, green: 216, blue: 255, alpha: 1.0)]
+    let backGroundColors = [UIColor(red: 255/255, green: 209/255, blue: 208/255, alpha: 1),
+                            UIColor(red: 222/255, green: 246/255, blue: 154/255, alpha: 1),
+                            UIColor(red: 203/255, green: 216/255, blue: 255/255, alpha: 1)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
