@@ -29,7 +29,8 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? TableViewCell
+        else { return UITableViewCell() }
         cell.nameLabel.text = prefectures[indexPath.row]
         cell.commentLabel.text = "\(indexPath.row + 1)番目の都道府県です"
         cell.backgroundColor = backGroundColors[indexPath.row % 3]
