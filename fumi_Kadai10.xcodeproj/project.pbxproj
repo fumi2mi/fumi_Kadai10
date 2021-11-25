@@ -61,11 +61,11 @@
 				B3AFDC9E274FC3ED009B9666 /* AppDelegate.swift */,
 				B3AFDCA0274FC3ED009B9666 /* SceneDelegate.swift */,
 				B3AFDCA2274FC3ED009B9666 /* ViewController.swift */,
+				B3AFDCB4274FC8D7009B9666 /* TableViewCell.swift */,
 				B3AFDCA4274FC3ED009B9666 /* Main.storyboard */,
 				B3AFDCA7274FC3EE009B9666 /* Assets.xcassets */,
 				B3AFDCA9274FC3EE009B9666 /* LaunchScreen.storyboard */,
 				B3AFDCAC274FC3EE009B9666 /* Info.plist */,
-				B3AFDCB4274FC8D7009B9666 /* TableViewCell.swift */,
 			);
 			path = fumi_Kadai10;
 			sourceTree = "<group>";

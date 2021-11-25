@@ -46,6 +46,10 @@
                                                 </stackView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="khN-7S-Itw" id="xpG-4S-Rhf"/>
+                                            <outlet property="nameLabel" destination="da1-j7-5Jh" id="SuY-NA-Nd8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
