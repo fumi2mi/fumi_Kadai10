@@ -21,11 +21,6 @@ class ViewController: UIViewController {
     let backGroundColors = [UIColor(red: 255/255, green: 209/255, blue: 208/255, alpha: 1),
                             UIColor(red: 222/255, green: 246/255, blue: 154/255, alpha: 1),
                             UIColor(red: 203/255, green: 216/255, blue: 255/255, alpha: 1)]
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 }
 
 extension ViewController: UITableViewDataSource {
