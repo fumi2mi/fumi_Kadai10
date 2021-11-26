@@ -20,42 +20,40 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="gVx-jT-h4L" customClass="TableViewCell" customModule="fumi_Kadai10" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="50" id="gVx-jT-h4L" customClass="TableViewCell" customModule="fumi_Kadai10" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gVx-jT-h4L" id="vci-Jv-iSR">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="qS5-jH-t6g">
-                                                    <rect key="frame" x="30" y="11.5" width="354" height="20.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群馬県" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da1-j7-5Jh">
-                                                            <rect key="frame" x="0.0" y="0.0" width="52" height="20.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="20.5" id="EYJ-61-LlA"/>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="eyf-DG-oNe"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10番目の都道府県です" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="176" translatesAutoresizingMaskIntoConstraints="NO" id="khN-7S-Itw">
-                                                            <rect key="frame" x="182" y="0.0" width="172" height="20.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="wBG-U3-hEY"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10番目の都道府県です" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="176" translatesAutoresizingMaskIntoConstraints="NO" id="khN-7S-Itw">
+                                                    <rect key="frame" x="230" y="14" width="164" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="h2c-1B-FP3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群馬県" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da1-j7-5Jh">
+                                                    <rect key="frame" x="20" y="14" width="52" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="HbZ-k3-wN8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="qS5-jH-t6g" secondAttribute="trailing" constant="10" id="MiY-Hi-WTu"/>
-                                                <constraint firstItem="qS5-jH-t6g" firstAttribute="leading" secondItem="vci-Jv-iSR" secondAttribute="leadingMargin" constant="10" id="N3J-P9-vg2"/>
-                                                <constraint firstItem="qS5-jH-t6g" firstAttribute="centerY" secondItem="vci-Jv-iSR" secondAttribute="centerY" id="p4F-f3-mUl"/>
+                                                <constraint firstItem="khN-7S-Itw" firstAttribute="top" secondItem="vci-Jv-iSR" secondAttribute="topMargin" constant="3" id="9Wd-wM-LYW"/>
+                                                <constraint firstItem="khN-7S-Itw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="da1-j7-5Jh" secondAttribute="trailing" constant="1" id="Drv-Pl-moo"/>
+                                                <constraint firstItem="da1-j7-5Jh" firstAttribute="top" secondItem="vci-Jv-iSR" secondAttribute="topMargin" constant="3" id="SvY-Lq-I9c"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="da1-j7-5Jh" secondAttribute="bottom" constant="3" id="f7L-kd-FBB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="khN-7S-Itw" secondAttribute="bottom" constant="3" id="kCJ-yb-4pR"/>
+                                                <constraint firstItem="khN-7S-Itw" firstAttribute="trailing" secondItem="vci-Jv-iSR" secondAttribute="trailingMargin" id="y22-c8-eov"/>
+                                                <constraint firstItem="da1-j7-5Jh" firstAttribute="leading" secondItem="vci-Jv-iSR" secondAttribute="leadingMargin" id="zFW-3v-6hP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.82999999999999996" alpha="1" colorSpace="calibratedWhite"/>
