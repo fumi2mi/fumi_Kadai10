@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PrefectureListViewController: UIViewController {
     private let prefectures = ["北海道", "青森県", "岩手県", "宮城県", "秋田県",
                        "山形県", "福島県", "茨城県", "栃木県", "群馬県",
                        "埼玉県", "千葉県", "東京都", "神奈川県", "新潟県",
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
                             UIColor(red: 203/255, green: 216/255, blue: 255/255, alpha: 1)]
 }
 
-extension ViewController: UITableViewDataSource {
+extension PrefectureListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return prefectures.count
     }
