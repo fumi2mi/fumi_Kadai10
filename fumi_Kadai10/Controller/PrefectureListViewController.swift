@@ -18,9 +18,6 @@ class PrefectureListViewController: UIViewController {
                        "徳島県", "香川県", "愛媛県", "高知県", "福岡県",
                        "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県",
                        "鹿児島県", "沖縄県"]
-    private let backGroundColors = [UIColor(red: 255/255, green: 209/255, blue: 208/255, alpha: 1),
-                            UIColor(red: 222/255, green: 246/255, blue: 154/255, alpha: 1),
-                            UIColor(red: 203/255, green: 216/255, blue: 255/255, alpha: 1)]
 }
 
 extension PrefectureListViewController: UITableViewDataSource {
@@ -31,9 +28,9 @@ extension PrefectureListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? TableViewCell
         else { return UITableViewCell() }
-        cell.getNameLabel().text = prefectures[indexPath.row]
-        cell.getCommentLabel().text = "\(indexPath.row + 1)番目の都道府県です"
-        cell.backgroundColor = backGroundColors[indexPath.row % 3]
+
+        cell.configure(name: prefectures[indexPath.row], index: indexPath.row)
+
         return cell
     }
 }
